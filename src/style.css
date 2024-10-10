@@ -1,12 +1,15 @@
 body {
 	background-color: #f9f7fe;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+a {
+	color: #ff8fab;
 }
 
 .container {
 	margin: 120px auto;
 	max-width: 600px;
-	background-color: white;
 }
 
 header {
@@ -18,45 +21,45 @@ h1 {
 	font-weight: 800;
 	font-size: 36px;
 	line-height: 1.5;
-	color: black;
+	color: #272044;
 }
 
 form {
 	padding: 30px;
-	background: white;
+	background-color: white;
+	box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
 	border-radius: 10px;
 	display: flex;
-	box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
 	margin-bottom: 30px;
 }
 
 .instructions {
 	padding: 16px;
-	border: 1px grey #718355;
+	border: 1px solid rgba(39, 33, 66, 0.5);
 	width: 80%;
 	font-size: 16px;
 	border-radius: 50px;
 	line-height: 20px;
-	color: grey;
+	color: #272044;
 }
 
 .submit-button {
 	margin-left: 10px;
-	background-color: #718355;
-	color: black;
-	width: 150px;
+	background: #ff8fab;
+	color: white;
 	border: none;
+	width: 150px;
 	font-size: 16px;
 	border-radius: 50px;
 	padding: 14px 24px;
 }
 
 .poem {
-	font-size: 14px;
-	background-color: white;
+	font-size: 16px;
+	background-color: #fff;
 	padding: 20px;
 	line-height: 2;
-	border-left: 3px solid #718355;
+	border-left: 3px solid #ff8fab;
 	box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
 }
 
@@ -64,9 +67,4 @@ footer {
 	text-align: center;
 	font-size: 13px;
 	margin-top: 30px;
-	background-color: #f9f7fe;
-}
-
-a {
-	color: #718355;
 }
