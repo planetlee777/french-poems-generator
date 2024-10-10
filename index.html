@@ -7,39 +7,45 @@
 		<link rel="stylesheet" href="src/style.css" />
 	</head>
 	<body>
-		<header>
-			<h1>ai french poem generator</h1>
-		</header>
-		<main>
-			<form action="">
-				<input
-					type="text"
-					placeholder="enter the desired topic of your poem"
-					autofocus
-					required
-					autocomplete="off" />
-				<input type="submit" />
-				<div>
+		<div class="container">
+			<header>
+				<h1>ai french poem generator</h1>
+			</header>
+
+			<main>
+				<form>
+					<input
+						type="text"
+						placeholder="enter the desired topic of your poem"
+						autofocus
+						required
+						autocomplete="off"
+						class="instructions" />
+					<input type="submit" class="submit-button" />
+				</form>
+				<div class="poem">
 					the poem will go here
 					<br />
 					as well as here
 				</div>
-			</form>
-		</main>
-		<footer>
-			This was coded by
-			<a href="https://github.com/planetlee777">Christlie Lavarin</a> and is
-			open sourced on
-			<a
-				href="https://github.com/planetlee777/french-poems-generator"
-				target="_blank"
-				>Github</a
-			>
-			and is hosted on
-			<a href="https://lees-french-poems.netlify.app/" target="_blank"
-				>Netlify</a
-			>.
-		</footer>
+			</main>
+
+			<footer>
+				This AI project was coded by
+				<a href="https://github.com/planetlee777">Christlie Lavarin</a> and is
+				open sourced on
+				<a
+					href="https://github.com/planetlee777/french-poems-generator"
+					target="_blank"
+					>Github</a
+				>
+				and is hosted on
+				<a href="https://lees-french-poems.netlify.app/" target="_blank"
+					>Netlify</a
+				>.
+			</footer>
+		</div>
+
 		<script src="src/index.js"></script>
 	</body>
 </html>
