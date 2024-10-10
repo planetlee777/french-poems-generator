@@ -5,7 +5,7 @@ function displayPoem(response) {
 	new Typewriter("#poem", {
 		strings: response.data.answer, // Display the response directly
 		autoStart: true,
-		delay: 75,
+		delay: 80,
 		cursor: "|",
 	});
 }
