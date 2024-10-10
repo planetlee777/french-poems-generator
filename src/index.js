@@ -13,11 +13,19 @@ function displayPoem(response) {
 function generatePoem(event) {
 	event.preventDefault();
 
-	let instructionsInput = document.querySelector(".instructions");
+	let instructionsInput = document.querySelector("#user-instructions");
+
+	// Hide poem element initially
+	let poemElement = document.querySelector(".poem");
+	poemElement.classList.add("hidden");
+
+	// Display "generating" message
+	poemElement.innerHTML = `<div class="generating">⏳ generating the french poem for you about ${instructionsInput.value}</div>`;
+	poemElement.classList.remove("hidden");
 
 	// Build the API URL
 	let apiKey = "00b387dff7299ao38439d0c8a4b58f4t"; // Replace with correct API key
-	let prompt = `User Instructions: generate a 4 line french poem about ${instructionsInput.value}`;
+	let prompt = `User Instructions: generate a 4-line french poem about ${instructionsInput.value}`;
 	let context =
 		"You are a romantic poem expert and love to write short poems. Your mission is to generate a 4-line poem. Please make sure to separate every line with a <br />. Sign the poem as SheCodes AI at the very bottom and use <strong>. Please make sure to follow User instructions";
 	let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
