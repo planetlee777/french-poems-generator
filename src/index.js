@@ -1,15 +1,13 @@
 function generatePoem(event) {
 	event.preventDefault();
 
-	let poemElement = document.querySelector("#poem");
-
 	new Typewriter("#poem", {
-		strings: "la tombe dit à la rose",
+		strings: "La tombe dit à la rose",
 		autoStart: true,
-		delay: 1,
-		cursor: "",
+		delay: 75,
+		cursor: "|",
 	});
 }
 
-let poemFormElement = document.querySelector("poem-generator-form");
+let poemFormElement = document.querySelector("#poem-generator-form"); // Corrected the selector
 poemFormElement.addEventListener("submit", generatePoem);
