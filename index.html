@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>ai french poem generator</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/typewriter-effect/2.18.0/core.js"></script>
 		<link rel="stylesheet" href="src/style.css" />
 	</head>
 	<body>
@@ -13,7 +14,7 @@
 			</header>
 
 			<main>
-				<form>
+				<form id="poem-generator-form">
 					<input
 						type="text"
 						placeholder="enter the desired topic of your poem"
@@ -23,11 +24,7 @@
 						class="instructions" />
 					<input type="submit" class="submit-button" />
 				</form>
-				<div class="poem">
-					the poem will go here
-					<br />
-					as well as here
-				</div>
+				<div class="poem" id="poem"></div>
 			</main>
 
 			<footer>
